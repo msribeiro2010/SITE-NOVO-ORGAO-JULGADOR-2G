@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Órgão Julgador - 2º Grau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Criação de Órgão Julgador - 2º Grau</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Passo 1: Copiar OJ do mesmo nome do OJ de exemplo</h2>
+            <form id="gabinetes-form">
+                <div class="form-group">
+                    <label for="gabinete1">OJ de exemplo:</label>
+                    <textarea id="gabinete1" name="gabinete1"
+                        placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 2ª SDI"></textarea>
+                </div>
+            </form>
+        </section>
+        <section id="localizacao">
+            <h2>Passo 2: Criar a Localização - Clicar no + (canto superior direito)</h2>
+        </section>
+        <section id="estrutura">
+            <form id="gabinetes-form">
+                <div class="form-group">
+                    <label for="gabinete2">OJ a ser criado:</label>
+                    <textarea id="gabinete2" name="gabinete2"
+                        placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 5ª SDI"></textarea>
+                </div>
+            </form>
+            <h2>Estrutura: Gabinete</h2>
+            <h2>CEP: 13015-927</h2>
+            <h2>NR: 901</h2>
+        </section>
+        <section id="orgao-julgador">
+            <h2>Passo 3: Criar o Órgão Julgador - Clicar no + (canto superior direito)</h2>
+            <form id="orgao-form">
+                <div class="form-group">
+                    <label for="gabinete3">OJ a ser criado:</label>
+                    <textarea id="gabinete3" name="gabinete3"
+                        placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 5ª SDI"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group small-input">
+                        <label for="sigla">SIGLA:</label>
+                        <input type="text" id="sigla" name="sigla" maxlength="20" placeholder="Ex.: MCTF-5SDI">
+                    </div>
+                    <div class="form-group small-input">
+                        <label for="sigla_envio_dejt">SIGLA ENVIO DEJT:</label>
+                        <input type="text" id="sigla_envio_dejt" name="sigla_envio_dejt" maxlength="20"
+                            placeholder="Ex.: MCTF-5SDI">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group small-input">
+                        <label for="codigo_origem">CÓDIGO DE ORIGEM:</label>
+                        <input type="text" id="codigo_origem" name="codigo_origem" maxlength="20"
+                            placeholder="Pegar no SecJud">
+                    </div>
+                    <div class="form-group small-input">
+                        <label for="data_criacao">DATA DA CRIAÇÃO:</label>
+                        <input type="date" id="data_criacao" name="data_criacao">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="orgao-colegiado">
+            <h2>Passo 4: Criar o Órgão Colegiado - Clicar na Câmara ou SDI correspondente</h2>
+            <form id="colegiado-form">
+                <div class="form-group">
+                    <label for="gabinete4">Órgão Julgador Colegiado:</label>
+                    <textarea id="gabinete4" name="gabinete4"
+                        placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 5ª SDI"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group small-input">
+                        <label for="sigla_colegiado">SIGLA:</label>
+                        <input type="text" id="sigla_colegiado" name="sigla_colegiado" maxlength="20"
+                            placeholder="Ex.: MCTF-5SDI">
+                    </div>
+                    <div class="form-group small-input">
+                        <label for="codigo_serventia">CÓDIGO SERVENTIA:</label>
+                        <input type="text" id="codigo_serventia" name="codigo_serventia" maxlength="20"
+                            placeholder="Ex.: ">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group small-input">
+                        <label for="data_criacao_colegiado">DATA DA CRIAÇÃO:</label>
+                        <input type="text" id="data_criacao_colegiado" name="data_criacao_colegiado"
+                            placeholder="Data do dia da criação">
+                    </div>
+                    <div class="form-group small-input">
+                        <label for="localizacao">LOCALIZAÇÃO:</label>
+                        <input type="text" id="localizacao" name="localizacao" maxlength="40"
+                            placeholder="Procurar do Gabinete criado">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Adicione mais seções conforme necessário -->
+    </main>
+</body>
+
+</html>

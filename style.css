@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+header {
+    background: #422acb;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #422acb;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group textarea,
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    min-height: auto;
+    resize: none;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group.small-input {
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.form-group.small-input input {
+    width: 100%;
+    max-width: 100%;
+}
+
+form p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
