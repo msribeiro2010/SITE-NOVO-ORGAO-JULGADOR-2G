@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criação de Órgão Julgador - 2º Grau</title>
+    <title>Criação OJ-2ºGrau</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,19 +17,19 @@
             <h2>Passo 1: Copiar o OJ com o mesmo nome do Desembargador para servir de exemplo.</h2>
             <form id="gabinetes-form">
                 <div class="form-group">
-                    <label for="gabinete1">OJ de exemplo:</label>
+                    <label for="gabinete">OJ de exemplo:</label>
                     <textarea id="gabinete" name="gabinete1"
                         placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 2ª SDI"></textarea>
                 </div>
             </form>
         </section>
-        <section id="localizacao1">
+        <section id="local">
             <h2>Passo 2: Criar a Localização - Clicar no + (canto superior direito)</h2>
         </section>
         <section id="estrutura">
             <form id="gabinetes-form">
                 <div class="form-group">
-                    <label for="gabinete2">Fazer a alteração no nome do OJ a ser criado:</label>
+                    <label for="gabinete">Fazer a alteração no nome do OJ a ser criado:</label>
                     <textarea id="gabinete1" name="gabinete2"
                         placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 5ª SDI"></textarea>
                 </div>
@@ -133,12 +133,12 @@
                         <div class="form-row">
                             <div class="form-group small-input">
                                 <label for="sigla_colegiado">SIGLA:</label>
-                                <input type="text" id="sigla_colegiado" name="sigla_colegiado" maxlength="20"
+                                <input type="text" id="siglaColegiado" name="sigla_colegiado" maxlength="20"
                                     placeholder="Ex.: MCTF-5SDI">
                             </div>
                             <div class="form-group small-input">
                                 <label for="codigo_serventia">CÓDIGO SERVENTIA:</label>
-                                <input type="text" id="codigo_serventia" name="codigo_serventia" maxlength="20"
+                                <input type="text" id="codigoServentia" name="codigo_serventia" maxlength="20"
                                     placeholder="Ex.: ">
                             </div>
                         </div>
@@ -161,29 +161,57 @@
                         Julgador</h2>
                     <form id="colegiado-form">
                         <div class="form-group">
-                            <label for="gabinete4">Buscar pelo Órgão Julgador criado.</label>
+                            <label for="gabinete4">Magistrado/Órgao Julgador - Localização/Visibilidade</label>
                             <textarea id="gabinete4" name="gabinete4"
                                 placeholder="Ex.: Gabinete do Desembargador Manoel Carlos Toledo Filho - 5ª SDI"></textarea>
                         </div>
                         <div class="form-row">
                             <div class="form-group small-input">
-                                <label for="sigla_colegiado">SIGLA:</label>
+                                <label for="sigla_colegiado">Orgao Julgador Colegiado*</label>
                                 <input type="text" id="sigla_colegiado" name="sigla_colegiado" maxlength="20"
-                                    placeholder="Ex.: MCTF-5SDI">
+                                    placeholder="Ex.: 5a Seção de Díssidios Individuais">
                             </div>
                             <div class="form-group small-input">
-                                <label for="codigo_serventia">CÓDIGO SERVENTIA:</label>
+                                <label for="codigo_serventia">Magistrado:</label>
                                 <input type="text" id="codigo_serventia" name="codigo_serventia" maxlength="20"
-                                    placeholder="Ex.: ">
+                                    placeholder="Ex.: Manoel Carlos Toledo Filho ">
                             </div>
+                            <div>
+                                <h3>Marcar como: Titular</h3>
+                                <h3>Data Incial: Da Criação</h3>
+                                <br><br>
+                            </div>
+
                         </div>
                         <div class="form-row">
                             <div class="form-group small-input">
-                                <label for="data_criacao_colegiado">DATA DA CRIAÇÃO:</label>
-                                <input type="text" id="data_criacao_colegiado" name="data_criacao_colegiado"
-                                    placeholder="Data do dia da criação">
+                                <label for="data_criacao_colegiado">Designação do Cargo:</label>
+                                <input type="text" id="cargo" name="cargo"
+                                    placeholder="Desembargador Federal do Trabalho">
                             </div>
-                            <div class="form-group small-input"><!-- Adicione mais seções conforme necessário -->
+                        </div> <!-- Adcione mais seções conforme necessário -->
+                    </form>
+                </section>
+                <section id="orgao-colegiado">
+                    <h2>Passo 8: Competência/Clicar em Adicionar Competência</h2>
+                    <form id="colegiado-form">
+                        <div class="form-group">
+                            <label for="gabinete4">Competência Órgão Julgador</label>
+                            <textarea id="gabinete4" name="gabinete4" placeholder="Ex.: TRT-Turmas"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group small-input">
+                                <label for="sigla_colegiado">Data Inicial:</label>
+                                <input type="text" id="sigla_colegiado" name="sigla_colegiado" maxlength="20"
+                                    placeholder="Do dia">
+                            </div>
+                        </div>
+                        </div> <!-- Adcione mais seções conforme necessário -->
+                    </form>
+                </section>
+            </section>
+        </section>
+
     </main>
 </body>
 
